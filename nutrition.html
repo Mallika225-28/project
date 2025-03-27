@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: url('WhatsApp Image 2025-03-18 at 9.36.21 PM.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            animation: backgroundMove 10s infinite alternate ease-in-out;
+        }
+        
+        @keyframes backgroundMove {
+            0% {
+                background-position: center top;
+            }
+            100% {
+                background-position: center bottom;
+            }
+        }
+
+        
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <img src="WhatsApp Image 2025-03-18 at 9.36.21 PM (1).jpeg" alt="Logo" class="logo">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Health Analysis</a>
+            <a href="#">Nutrition Guide</a>
+            <a href="#" onclick="toggleAccountSection()">Account</a>
+        </div>
+    </nav>
+
+   
+
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="form-container">
+            <h2 class="text-center text-lg font-bold">I am (biologically) a</h2>
+            <select class="input-field">
+                <option>Man</option>
+                <option>Woman</option>
+            </select>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label>My Height(cm)</label>
+                    <input type="text" id="height" class="input-field">
+                </div>
+                <div>
+                    <label>My Weight(kg)</label>
+                    <input type="text" id="weight" class="input-field">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <div>
+                    <label>My Age</label>
+                    <input type="text" id="age" class="input-field">
+                </div>
+                <div>
+                    <label>Dietary Choice</label>
+                    <select class="input-field">
+                        <option>Veg</option>
+                        <option>Non-Veg</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <label>I'd like to</label>
+                <select class="input-field">
+                    <option>Gain Weight</option>
+                    <option>Eat Healthy</option>
+                    <option>Build Muscle</option>
+                    <option>Lose Weight</option>
+                </select>
+            </div>
+
+            <button class="submit-btn" onclick="validateForm()">Submit</button>
+        </div>
+    </div>
+
+    <!-- <div id="account-section" class="hidden overlay">
+        <div class="account-container">
+            <h2>Account</h2>
+            <button class="action-btn bg-blue-600" onclick="showLogin()">Log In</button>
+            <button class="action-btn bg-green-600" onclick="showSignup()">Sign Up</button>
+            <button class="action-btn bg-gray-600" onclick="toggleAccountSection()">Back</button>
+            <button class="close-btn" onclick="toggleAccountSection()">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> -->
+</body>
+</html>

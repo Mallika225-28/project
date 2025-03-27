@@ -1,0 +1,127 @@
+/* Background */
+/* body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+   /* margin: 0; */
+   /* gap: 10px; */
+   align-items: center;
+   justify-content: space-between;
+   /* padding-top: 40px ; */
+   padding-left: 10%;
+   padding-right: 10%;
+   /* background: rgba(181, 190, 216, 0.655); */
+   background: rgb(191 199 224);
+   /* background:rgba(194, 213, 208, 0.655); */
+   box-shadow: 5px 5px 15px 5px #88888896;
+   outline: 2px solid #5fa989;
+   /* z-index: 1; */
+}
+
+.nav-links a {
+    color: rgb(10, 100, 57,0.934);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position:relative;
+    /* right:90px; */
+    mix-blend-mode: multiply;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(211, 244, 234, 0.655);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(30, 201, 156, 0.655);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #38a169;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #2f855a;
+}
+
+/* Account Section */
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.account-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+.action-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
